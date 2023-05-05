@@ -1,0 +1,35 @@
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  input[type='text'],
+  textarea {
+    width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  textarea {
+    height: 135px;
+  }
+
+  button {
+    margin-top: 1rem;
+    min-width: 48px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: lightgreen;
+  }
+}

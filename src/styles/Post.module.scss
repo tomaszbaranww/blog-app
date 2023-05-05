@@ -1,0 +1,29 @@
+.post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:is(:focus, :hover, :active) {
+      h2 {
+        color: darkblue;
+      }
+    }
+  }
+
+  .postDate {
+    font-size: 0.65rem;
+    margin-top: 0.25rem;
+  }
+
+  .postBody {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,49 @@
+.postPage .post {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:is(:focus, :hover, :active) {
+      h2 {
+        color: darkblue;
+      }
+    }
+  }
+
+  .postDate {
+    font-size: 0.65rem;
+    margin-top: 0.25rem;
+  }
+
+  .postBody {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+  }
+
+  .buttons {
+    display: flex;
+    align-self: center;
+    margin-top: auto;
+    gap: 1rem;
+  }
+
+  button {
+    min-width: 48px;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .editButton {
+    background-color: cornflowerblue;
+  }
+}

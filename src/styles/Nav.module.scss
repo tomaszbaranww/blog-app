@@ -1,0 +1,31 @@
+.nav {
+  width: 100%;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  li {
+    padding: 0.75rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:is(:focus, :hover, :active) {
+        color: navajowhite;
+      }
+    }
+  }
+}
