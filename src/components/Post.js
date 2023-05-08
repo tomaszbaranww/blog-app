@@ -4,7 +4,7 @@ import styles from 'styles/Post.module.scss';
 export const Post = ({ post }) => {
   return (
     <article className={styles.post}>
-      <Link to={`/post/${post.id}`}>
+      <Link to={`/blog-app/post/${post.id}`}>
         <h2>{post.title}</h2>
         <p className={styles.postDate}>{post.datetime}</p>
       </Link>

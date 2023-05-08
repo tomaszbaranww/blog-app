@@ -22,7 +22,7 @@ export const EditPost = () => {
       setPosts(posts.map((post) => (post.id === id ? { ...response.data } : post)));
       setEditPostTitle('');
       setEditPostBody('');
-      navigate('/');
+      navigate('/blog-app');
     } catch (error) {
       console.error(error);
     }
@@ -56,7 +56,7 @@ export const EditPost = () => {
         <>
           <h2>Post not found</h2>
           <p>
-            <Link to="/">Go to Homepage</Link>
+            <Link to="/blog-app">Go to Homepage</Link>
           </p>
         </>
       )}

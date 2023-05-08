@@ -22,7 +22,7 @@ export const NewPost = () => {
       setPosts(allPosts);
       setPostTitle('');
       setPostBody('');
-      navigate('/');
+      navigate('/blog-app');
     } catch (error) {
       console.error(error);
     }

@@ -6,7 +6,7 @@ export const Header = ({ title }) => {
     <header className={styles.header}>
       <span>
         <h1>
-          <Link to="/">{title}</Link>
+          <Link to="/blog-app">{title}</Link>
         </h1>
       </span>
     </header>

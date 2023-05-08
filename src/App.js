@@ -18,11 +18,11 @@ export const App = () => {
       <DataProvider>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="post" element={<NewPost />} />
-          <Route path="edit/:id" element={<EditPost />} />
-          <Route path="post/:id" element={<PostPage />} />
-          <Route path="/*" element={<Missing />} />
+          <Route path="/blog-app" element={<Home />} />
+          <Route path="blog-app/post" element={<NewPost />} />
+          <Route path="blog-app/edit/:id" element={<EditPost />} />
+          <Route path="blog-app/post/:id" element={<PostPage />} />
+          <Route path="blog-app/*" element={<Missing />} />
         </Routes>
       </DataProvider>
       <Footer />

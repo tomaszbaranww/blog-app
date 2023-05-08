@@ -15,7 +15,7 @@ export const PostPage = () => {
       await api.delete(`/posts/${id}`);
       const postList = posts.filter((post) => post.id !== id);
       setPosts(postList);
-      navigate('/');
+      navigate('/blog-app');
     } catch (error) {
       console.error(error);
     }
@@ -30,7 +30,7 @@ export const PostPage = () => {
             <p className={styles.postDate}>{post.datetime}</p>
             <p className={styles.postBody}>{post.body}</p>
             <div className={styles.buttons}>
-              <Link to={`/edit/${post.id}`}>
+              <Link to={`/blog-app/edit/${post.id}`}>
                 <button className={styles.editButton}>Edit Post</button>
               </Link>
               <button onClick={() => handleDelete(post.id)}>Delete Post</button>
@@ -41,7 +41,7 @@ export const PostPage = () => {
           <>
             <h2>Post Not Found</h2>
             <p>
-              <Link to="/">Go to Homepage</Link>
+              <Link to="/blog-app">Go to Homepage</Link>
             </p>
           </>
         )}

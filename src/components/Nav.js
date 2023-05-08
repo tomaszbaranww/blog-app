@@ -6,10 +6,10 @@ export const Nav = () => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/blog-app">Home</Link>
         </li>
         <li>
-          <Link to="/post"> Add Post</Link>
+          <Link to="/blog-app/post"> Add Post</Link>
         </li>
       </ul>
     </nav>

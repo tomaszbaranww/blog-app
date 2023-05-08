@@ -6,7 +6,7 @@ export const Missing = () => {
     <main className={styles.missing}>
       <h2>Page Not Found</h2>
       <p>
-        <Link to="/">Go to Homepage</Link>
+        <Link to="/blog-app">Go to Homepage</Link>
       </p>
     </main>
   );
