@@ -4,7 +4,7 @@ export const Footer = () => {
   const today = new Date();
   return (
     <footer className={styles.footer}>
-      <p>Copyright &copy; {today.getFullYear()}</p>
+      <p>tomaszbaranww, Copyright &copy; {today.getFullYear()}</p>
     </footer>
   );
 };
